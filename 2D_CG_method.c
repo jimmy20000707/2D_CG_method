@@ -157,6 +157,7 @@ int main() {
 	double x[NX];
 	omp_set_num_threads(10);
    	cg_method(A, b, x);
+	free(A);
 	//save(x);
     	return 0;
 }
